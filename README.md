@@ -21,17 +21,16 @@ End-to-end analytics project on a 24-month Indian online marketplace dataset: da
 6. [Workflow and Methodology](#6-workflow-and-methodology)
 7. [Data Cleaning and Preprocessing](#7-data-cleaning-and-preprocessing)
 8. [Exploratory Data Analysis](#8-exploratory-data-analysis)
-9. [SQL Analysis](#9-sql-analysis)
-10. [Key Performance Indicators](#10-key-performance-indicators)
-11. [Power BI Dashboard](#11-power-bi-dashboard)
-12. [Key Findings](#12-key-findings)
-13. [Business Recommendations](#13-business-recommendations)
-14. [Repository Structure](#14-repository-structure)
-15. [Reproducing the Analysis](#15-reproducing-the-analysis)
-16. [Viewing the Power BI Dashboard](#16-viewing-the-power-bi-dashboard)
-17. [Limitations and Future Improvements](#17-limitations-and-future-improvements)
-18. [Skills Demonstrated](#18-skills-demonstrated)
-19. [Author](#19-author)
+9. [Key Performance Indicators](#9-key-performance-indicators)
+10. [Power BI Dashboard](#10-power-bi-dashboard)
+11. [Key Findings](#11-key-findings)
+12. [Business Recommendations](#12-business-recommendations)
+13. [Repository Structure](#13-repository-structure)
+14. [Reproducing the Analysis](#14-reproducing-the-analysis)
+15. [Viewing the Power BI Dashboard](#15-viewing-the-power-bi-dashboard)
+16. [Limitations and Future Improvements](#16-limitations-and-future-improvements)
+17. [Skills Demonstrated](#17-skills-demonstrated)
+18. [Author](#18-author)
 
 ---
 
@@ -92,11 +91,9 @@ Eight CSV tables (plus a SQL schema file) from the IndiaKart database.
 
 | Area | Tools |
 |------|-------|
-| Data cleaning and EDA | Python: Pandas, NumPy, Matplotlib, Seaborn |
-| Querying | SQL |
+| Data cleaning and EDA | Python: Pandas, NumPy, Matplotlib |
 | Dashboard | Power BI Desktop |
-| Spreadsheets | Excel (where applicable) |
-| Version control | Git, GitHub |
+| Version control | GitHub |
 
 ## 6. Workflow and Methodology
 
@@ -107,7 +104,7 @@ The project ran in four sequential phases, each building on the last.
 | 1 | Data cleaning and quality report | Profiling, missing values, duplicates, types, outliers, referential integrity |
 | 2 | EDA with 10 charts | Trends, distributions, segments, payments, returns |
 | 3 | KPI calculations | 10 KPIs with formulas, benchmarks, and interpretation |
-| 4 | Dashboard and insights | 5-page Power BI report |
+| 4 | Dashboard and insights | Power BI report |
 
 ## 7. Data Cleaning and Preprocessing
 
@@ -151,17 +148,7 @@ Full write-up with all 10 charts: [Phase 2 EDA Report](reports/IndiaKart_Phase2_
 | 9 | Return reasons | Size Issue (1,196), Changed Mind (1,150), Damaged in Transit (1,143); spread across many reasons |
 | 10 | AOV by segment | Budget highest (about ₹64,951); Premium lowest (about ₹61,692) |
 
-## 9. SQL Analysis
-
-The project brief supplies a `schema_and_sql.sql` file containing the table schema and 12 analytical queries that mirror the KPI work in Phase 3 (revenue, cancellation, segment, and category analysis).
-
-> **To complete:** add your own SQL scripts to the `sql/` folder and list each query and its business purpose here. No SQL outputs are reported in this README because none were included in the project files reviewed.
-
-| Query | Business purpose | File |
-|-------|------------------|------|
-| _Add your queries_ | _Add purpose_ | _`sql/your_file.sql`_ |
-
-## 10. Key Performance Indicators
+## 9. Key Performance Indicators
 
 Full write-up: [Phase 3 KPI Report](reports/IndiaKart_Phase3_KPI_Bindiya_Anand.pdf)
 
@@ -194,7 +181,7 @@ Full write-up: [Phase 3 KPI Report](reports/IndiaKart_Phase3_KPI_Bindiya_Anand.p
 - **MoM growth:** June 2023 (data starts 24 June) and June 2025 (data ends 23 June) are partial months. Over the 22 complete months from August 2023 to May 2025, average growth is 0.51%, which indicates a flat but volatile trend.
 - **CLV** here is average recorded lifetime spend, not a predictive model.
 
-## 11. Power BI Dashboard
+## 10. Power BI Dashboard
 
 File: `IndiaKart_Phase4_Dashboard_Bindiya_Anand.pbix` (data model tables: customers, inventory, order_items, orders, payments, products, returns).
 
@@ -226,7 +213,7 @@ File: `IndiaKart_Phase4_Dashboard_Bindiya_Anand.pbix` (data model tables: custom
 
 </details>
 
-## 12. Key Findings
+## 11. Key Findings
 
 1. **Only about two-thirds of order value becomes delivered revenue.** Net Revenue is ₹2.05bn against GMV of ₹3.15bn (65.3%). 11.99% of orders are cancelled and a further 3,933 are marked Returned.
 2. **Returns look like the largest operational gap, but the metric needs validation.** The 30.77% return rate is far above the 8% target, yet the numerator and denominator are not defined on the same basis. Return reasons are spread across several causes (Size Issue, Changed Mind, Damaged in Transit lead at about 11-12% each).
@@ -236,7 +223,7 @@ File: `IndiaKart_Phase4_Dashboard_Bindiya_Anand.pbix` (data model tables: custom
 6. **Geographic concentration.** Uttar Pradesh and Maharashtra together account for about 35.4% of orders.
 7. **Payment and stock KPIs miss target.** Payment failure is 3.50% (target < 2%) and inventory fill rate is 92.20% (target > 95%), driven mainly by 76 Low Stock SKUs rather than the 2 Out of Stock SKUs.
 
-## 13. Business Recommendations
+## 12. Business Recommendations
 
 These follow from the findings above; each needs the validation noted before action.
 
@@ -249,7 +236,7 @@ These follow from the findings above; each needs the validation noted before act
 7. **Review segment definitions and re-engage Inactive customers**, given the weak Premium-to-Regular separation and very low Inactive spend.
 8. **Prioritise delivery capacity and support in Uttar Pradesh and Maharashtra**, while checking profitability and customer value by state.
 
-## 14. Repository Structure
+## 13. Repository Structure
 
 Folders marked *(add)* are not yet populated from the files reviewed.
 
@@ -267,13 +254,17 @@ IndiaKart-Ecommerce-Analytics/
 │   ├── IndiaKart_Data_Quality_Report_Phase1_DataCleaning_Bindiya_Anand.pdf
 │   ├── IndiaKart_Phase2_EDA_Bindiya_Anand.pdf
 │   ├── IndiaKart_Phase3_KPI_Bindiya_Anand.pdf
-│   └── BI_dashboard_screenshots.pdf
-├── notebooks/        (add: Phase 1-3 Jupyter notebooks)
-├── sql/              (add: SQL scripts)
-└── dashboard/        (add: IndiaKart_Phase4_Dashboard_Bindiya_Anand.pbix)
+│   └── IndiaKart_Phase4_Management_Summary_Report_Bindiya_Anand.pdf
+├── Notebooks/
+│   ├── Phase1_DataCleaning_Bindiya_Anand.ipynb
+│   ├── Phase2_EDA_Bindiya_Anand.ipynb
+│   └── Phase3_KPI_Bindiya_Anand.ipynb
+├── Power_BI_Dashboard/
+│   ├── Dashboard_Overview.mp4
+│   └── IndiaKart_Phase4_Dashboard_Bindiya_Anand.pbix
 ```
 
-## 15. Reproducing the Analysis
+## 14. Reproducing the Analysis
 
 The raw CSV files are not distributed with this repository. To reproduce:
 
@@ -293,12 +284,12 @@ The raw CSV files are not distributed with this repository. To reproduce:
    orders["order_date"] = pd.to_datetime(orders["order_date"], format="%d-%m-%Y")
    ```
 
-## 16. Viewing the Power BI Dashboard
+## 15. Viewing the Power BI Dashboard
 
 - **Quick view:** see the screenshots in [Section 11](#11-power-bi-dashboard) or open [`reports/BI_dashboard_screenshots.pdf`](reports/BI_dashboard_screenshots.pdf).
 - **Interactive view:** download the `.pbix` file from `dashboard/` (once added) and open it in the free [Power BI Desktop](https://www.microsoft.com/en-in/power-bi). Use the slicers on each page to filter.
 
-## 17. Limitations and Future Improvements
+## 16. Limitations and Future Improvements
 
 **Limitations**
 
@@ -316,19 +307,17 @@ The raw CSV files are not distributed with this repository. To reproduce:
 - Restate MoM and YoY growth on complete months only.
 - Add value split across non-delivered statuses to locate the largest revenue leakage.
 - Break down cancellations and payment failures by gateway, bank, category, and payment method.
-- Cohort retention analysis by registration month (optional bonus in the project brief).
 - Predictive CLV and churn modelling.
 
-## 18. Skills Demonstrated
+## 17. Skills Demonstrated
 
 - **Data cleaning:** type conversion, missing-value and duplicate profiling, outlier flagging, referential-integrity validation
 - **EDA:** time-series, distribution, and segment analysis with Matplotlib and Seaborn
 - **Business metrics:** KPI definition, benchmark comparison, critical interpretation (partial months, metric-definition issues)
-- **SQL:** relational querying over a multi-table schema
 - **Dashboarding:** multi-page Power BI report with slicers and KPI cards
 - **Communication:** translating analysis into business findings and recommendations
 
-## 19. Author
+## 18. Author
 
 **Bindiya Anand**
 Data Analyst Intern

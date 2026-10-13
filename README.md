@@ -2,9 +2,8 @@
 
 End-to-end analytics project on a 24-month Indian online marketplace dataset: data cleaning, exploratory analysis, business KPIs, and a 5-page interactive Power BI dashboard, built to answer management's questions on revenue, cancellations, returns, customers, and operations.
 
-![Python](https://img.shields.io/badge/Python-Pandas%20%7C%20NumPy-blue)
-![Visualisation](https://img.shields.io/badge/Matplotlib%20%7C%20Seaborn-11557c)
-![SQL](https://img.shields.io/badge/SQL-analysis-lightgrey)
+![Python](https://img.shields.io/badge/Python-Pandas%20%7C%20NumPy%20%7C%20Analysis-blue)
+![Visualisation](https://img.shields.io/badge/Matplotlib-11557c)
 ![Power BI](https://img.shields.io/badge/Power%20BI-dashboard-F2C811)
 
 ![Revenue Overview dashboard page](images/dashboard/01_revenue_overview.png)

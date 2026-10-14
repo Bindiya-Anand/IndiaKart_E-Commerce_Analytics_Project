@@ -6,7 +6,7 @@ End-to-end analytics project on a 24-month Indian online marketplace dataset: da
 ![Visualisation](https://img.shields.io/badge/Matplotlib-11557c)
 ![Power BI](https://img.shields.io/badge/Power%20BI-dashboard-F2C811)
 
-![Revenue Overview dashboard page](images/dashboard/01_revenue_overview.png)
+https://github.com/user-attachments/assets/9ea761a5-df63-4e79-bf51-a6cdb95e4cf9
 
 ---
 
@@ -107,7 +107,7 @@ The project ran in four sequential phases, each building on the last.
 
 ## 7. Data Cleaning and Preprocessing
 
-Full write-up: [Phase 1 Data Quality Report](reports/IndiaKart_Data_Quality_Report_Phase1_DataCleaning_Bindiya_Anand.pdf)
+Report: [Phase 1 Data Quality Report](reports/IndiaKart_Data_Quality_Report_Phase1_DataCleaning_Bindiya_Anand.pdf)
 
 **Treatments applied**
 
@@ -132,7 +132,7 @@ Full write-up: [Phase 1 Data Quality Report](reports/IndiaKart_Data_Quality_Repo
 
 ## 8. Exploratory Data Analysis
 
-Full write-up with all 10 charts: [Phase 2 EDA Report](reports/IndiaKart_Phase2_EDA_Bindiya_Anand.pdf)
+Report: [Phase 2 EDA Report](reports/IndiaKart_Phase2_EDA_Bindiya_Anand.pdf)
 
 | # | Analysis | Observation |
 |---|----------|-------------|
@@ -149,7 +149,7 @@ Full write-up with all 10 charts: [Phase 2 EDA Report](reports/IndiaKart_Phase2_
 
 ## 9. Key Performance Indicators
 
-Full write-up: [Phase 3 KPI Report](reports/IndiaKart_Phase3_KPI_Bindiya_Anand.pdf)
+Report: [Phase 3 KPI Report](reports/IndiaKart_Phase3_KPI_Bindiya_Anand.pdf)
 
 | # | KPI | Definition | Result | Benchmark | Status |
 |---|-----|------------|--------|-----------|--------|

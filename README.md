@@ -6,7 +6,7 @@ End-to-end analytics project on a 24-month Indian online marketplace dataset: da
 ![Visualisation](https://img.shields.io/badge/Matplotlib-11557c)
 ![Power BI](https://img.shields.io/badge/Power%20BI-dashboard-F2C811)
 
-https://github.com/user-attachments/assets/9ea761a5-df63-4e79-bf51-a6cdb95e4cf9
+https://github.com/user-attachments/assets/a1a8f443-83ef-465f-99a1-23a031b9a0ba
 
 ---
 
@@ -25,11 +25,10 @@ https://github.com/user-attachments/assets/9ea761a5-df63-4e79-bf51-a6cdb95e4cf9
 11. [Key Findings](#11-key-findings)
 12. [Business Recommendations](#12-business-recommendations)
 13. [Repository Structure](#13-repository-structure)
-14. [Reproducing the Analysis](#14-reproducing-the-analysis)
-15. [Viewing the Power BI Dashboard](#15-viewing-the-power-bi-dashboard)
-16. [Limitations and Future Improvements](#16-limitations-and-future-improvements)
-17. [Skills Demonstrated](#17-skills-demonstrated)
-18. [Author](#18-author)
+14. [Viewing the Power BI Dashboard](#15-viewing-the-power-bi-dashboard)
+15. [Limitations and Future Improvements](#16-limitations-and-future-improvements)
+16. [Skills Demonstrated](#17-skills-demonstrated)
+17. [Author](#18-author)
 
 ---
 
@@ -242,6 +241,12 @@ Folders marked *(add)* are not yet populated from the files reviewed.
 ```
 IndiaKart-Ecommerce-Analytics/
 ├── README.md
+├── Notebooks/
+│   ├── Phase1_DataCleaning_Bindiya_Anand.ipynb
+│   ├── Phase2_EDA_Bindiya_Anand.ipynb
+│   └── Phase3_KPI_Bindiya_Anand.ipynb
+├── Power_BI_Dashboard/
+│   └── IndiaKart_Phase4_Dashboard_Bindiya_Anand.pbit
 ├── images/
 │   └── dashboard/
 │       ├── 01_revenue_overview.png
@@ -254,46 +259,20 @@ IndiaKart-Ecommerce-Analytics/
 │   ├── IndiaKart_Phase2_EDA_Bindiya_Anand.pdf
 │   ├── IndiaKart_Phase3_KPI_Bindiya_Anand.pdf
 │   └── IndiaKart_Phase4_Management_Summary_Report_Bindiya_Anand.pdf
-├── Notebooks/
-│   ├── Phase1_DataCleaning_Bindiya_Anand.ipynb
-│   ├── Phase2_EDA_Bindiya_Anand.ipynb
-│   └── Phase3_KPI_Bindiya_Anand.ipynb
-├── Power_BI_Dashboard/
-│   ├── Dashboard_Overview.mp4
-│   └── IndiaKart_Phase4_Dashboard_Bindiya_Anand.pbix
+└──
 ```
 
-## 14. Reproducing the Analysis
+## 14. Viewing the Power BI Dashboard
 
-The raw CSV files are not distributed with this repository. To reproduce:
+- **Quick view:** see the video preview at the top or screenshots in [Section 10](#10-power-bi-dashboard)
+- **Interactive view:** download the `.pbit` file from `Power_BI_Dashboard/` and open it in the free [Power BI Desktop](https://www.microsoft.com/en-in/power-bi). Use the slicers on each page to filter.
 
-1. Obtain the eight IndiaKart CSV files (`orders`, `order_items`, `customers`, `products`, `payments`, `returns`, `inventory`, `suppliers`) and place them in a local `data/` folder.
-2. Install the dependencies:
-
-   ```bash
-   pip install pandas numpy matplotlib seaborn openpyxl jupyter
-   ```
-
-3. Open the Phase 1-3 notebooks in `notebooks/` and run them in order.
-4. Parse dates in the Indian format, for example:
-
-   ```python
-   import pandas as pd
-   orders = pd.read_csv("data/orders.csv")
-   orders["order_date"] = pd.to_datetime(orders["order_date"], format="%d-%m-%Y")
-   ```
-
-## 15. Viewing the Power BI Dashboard
-
-- **Quick view:** see the screenshots in [Section 11](#11-power-bi-dashboard) or open [`reports/BI_dashboard_screenshots.pdf`](reports/BI_dashboard_screenshots.pdf).
-- **Interactive view:** download the `.pbix` file from `dashboard/` (once added) and open it in the free [Power BI Desktop](https://www.microsoft.com/en-in/power-bi). Use the slicers on each page to filter.
-
-## 16. Limitations and Future Improvements
+## 15. Limitations and Future Improvements
 
 **Limitations**
 
 - **Row counts differ across phases.** The Phase 1 report profiled Orders at 6,543 rows and Payments at 18,930 rows, while the project brief and the Phase 2-3 analysis use 50,000 each. The Phase 1 referential-integrity counts (order items, payments, and returns not found in Orders) reflect that smaller load and should be re-run on the full files before being cited.
-- **Return rate definition** mixes return records with a Delivered-only base (see [Section 10](#10-key-performance-indicators)). The dashboard's category return rate is labelled "Estimated" (about 19.6-21.5% across categories).
+- **Return rate definition** mixes return records with a Delivered-only base (see [Section 9](#9-key-performance-indicators)). The dashboard's category return rate is labelled "Estimated" (about 19.6-21.5% across categories).
 - **AOV differs between report and dashboard.** The KPI AOV (₹63,198) is Net Revenue ÷ delivered orders; the dashboard card (₹62.95K) equals GMV ÷ all 50,000 orders.
 - **Electronics share differs slightly by method:** about 56.6% in the EDA chart vs 57.41% in the KPI calculation (`order_items.total_price`).
 - **Partial months** at both ends of the data (June 2023 and June 2025) distort month-over-month and year-over-year comparisons.
@@ -308,7 +287,7 @@ The raw CSV files are not distributed with this repository. To reproduce:
 - Break down cancellations and payment failures by gateway, bank, category, and payment method.
 - Predictive CLV and churn modelling.
 
-## 17. Skills Demonstrated
+## 16. Skills Demonstrated
 
 - **Data cleaning:** type conversion, missing-value and duplicate profiling, outlier flagging, referential-integrity validation
 - **EDA:** time-series, distribution, and segment analysis with Matplotlib and Seaborn
@@ -316,7 +295,7 @@ The raw CSV files are not distributed with this repository. To reproduce:
 - **Dashboarding:** multi-page Power BI report with slicers and KPI cards
 - **Communication:** translating analysis into business findings and recommendations
 
-## 18. Author
+## 17. Author
 
 **Bindiya Anand**
 Data Analyst Intern

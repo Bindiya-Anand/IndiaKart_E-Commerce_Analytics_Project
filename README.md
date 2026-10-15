@@ -61,7 +61,7 @@ The dataset covers **June 2023 to June 2025** (data ends 23 June 2025) across **
 
 ## 4. Dataset
 
-Eight CSV tables (plus a SQL schema file) from the IndiaKart database.
+Eight CSV tables from the IndiaKart database.
 
 | Table | Records (per project brief) | Description |
 |-------|---------------------------:|-------------|
@@ -146,6 +146,51 @@ Report: [Phase 2 EDA Report](reports/IndiaKart_Phase2_EDA_Bindiya_Anand.pdf)
 | 9 | Return reasons | Size Issue (1,196), Changed Mind (1,150), Damaged in Transit (1,143); spread across many reasons |
 | 10 | AOV by segment | Budget highest (about ₹64,951); Premium lowest (about ₹61,692) |
 
+<details>
+<summary><b>EDA Visualizations</b></summary>
+  
+**Monthly Order Volume**
+
+![Monthly Order Volume](images/plots/01_monthly_order_volume.png)
+
+**Gross Merchandise Value**
+
+![Gross Merchandise Value](images/plots/02_gmv.png)
+
+**Category-wise Revenue Share**
+
+![Category-wise Revenue Share](images/plots/03_category_revenue_share.png)
+
+**Order Status Distribution**
+
+![Order Status Distribution](images/plots/04_order_status_distribution.png)
+
+**Top 10 States by Orders**
+
+![Top 10 States by Orders](images/plots/05_top_states.png)
+
+**Customer Segment Distribution**
+
+![Customer Segment Distribution](images/plots/06_customer_segment.png)
+
+**Payment Method Usage**
+
+![Payment Method Usage](images/plots/07_payment_method.png)
+
+**Age Distribution**
+
+![Age Distribution](images/plots/08_age_distribution.png)
+
+**Return Reasons**
+
+![Return Reasons](images/plots/09_return_reasons.png)
+
+**Average Order Value**
+
+![Average Order Value](images/plots/10_aov.png)
+
+</details>
+
 ## 9. Key Performance Indicators
 
 Report: [Phase 3 KPI Report](reports/IndiaKart_Phase3_KPI_Bindiya_Anand.pdf)
@@ -181,7 +226,7 @@ Report: [Phase 3 KPI Report](reports/IndiaKart_Phase3_KPI_Bindiya_Anand.pdf)
 
 ## 10. Power BI Dashboard
 
-File: `IndiaKart_Phase4_Dashboard_Bindiya_Anand.pbix` (data model tables: customers, inventory, order_items, orders, payments, products, returns).
+File: `IndiaKart_Phase4_Dashboard_Bindiya_Anand.pbit` (data model tables: customers, inventory, order_items, orders, payments, products, returns).
 
 | Page | Visuals | Slicers |
 |------|---------|---------|
@@ -254,6 +299,17 @@ IndiaKart-Ecommerce-Analytics/
 │       ├── 03_customer_insights.png
 │       ├── 04_operations.png
 │       └── 05_inventory_alert.png
+│   └── plots/
+│       ├── 01_monthly_order_volume.png
+│       ├── 02_gmv.png
+│       ├── 03_category_revenue_share.png
+│       ├── 04_order_status_distribution.png
+│       ├── 05_top_states.png
+│       ├── 06_customer_segment.png
+│       ├── 07_payment_method.png
+│       ├── 08_age_distribution.png
+│       ├── 09_return_reasons.png
+│       └── 10_aov.png
 ├── reports/
 │   ├── IndiaKart_Data_Quality_Report_Phase1_DataCleaning_Bindiya_Anand.pdf
 │   ├── IndiaKart_Phase2_EDA_Bindiya_Anand.pdf
@@ -300,5 +356,5 @@ IndiaKart-Ecommerce-Analytics/
 **Bindiya Anand**
 Data Analyst Intern
 
-- GitHub: [add your GitHub profile link]
-- LinkedIn: [add your LinkedIn profile link]
+- GitHub: https://github.com/Bindiya-Anand
+- LinkedIn: https://www.linkedin.com/in/bindiya-anand/

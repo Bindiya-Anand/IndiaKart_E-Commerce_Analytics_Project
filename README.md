@@ -1,4 +1,4 @@
-# IndiaKart E-Commerce Analytics
+# IndiaKart E-Commerce Analytics Project
 
 End-to-end analytics project on a 24-month Indian online marketplace dataset: data cleaning, exploratory analysis, business KPIs, and a 5-page interactive Power BI dashboard, built to answer management's questions on revenue, cancellations, returns, customers, and operations.
 

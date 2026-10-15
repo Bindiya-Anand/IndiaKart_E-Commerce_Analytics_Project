@@ -281,8 +281,6 @@ These follow from the findings above; each needs the validation noted before act
 
 ## 13. Repository Structure
 
-Folders marked *(add)* are not yet populated from the files reviewed.
-
 ```
 IndiaKart-Ecommerce-Analytics/
 ├── README.md
